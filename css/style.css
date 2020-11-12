@@ -2,12 +2,14 @@
 
 
 .map {
-    border: medium solid #999;
+    border: solid black;
+    border-width: 3px;
 }
 .chart {
 	float: auto;
-	margin:100px 75px 0px 25px;
-    border: medium solid #999;
+	margin:100px 75px 0px 50px;
+    border: solid black;
+    border-width: 3px;
 }
 
 .chartTitle {
@@ -52,7 +54,7 @@ option {
 }
 
 
-/*.infolabel {
+.infolabel {
 	position: absolute;
 	height: 50px;
 	min-width: 100px;
@@ -68,7 +70,7 @@ option {
 	padding: 0;
 	display: inline-block;
 	line-height: 1em;
-}*/
+}
 
 .regions {
     fill:#296FB3;
@@ -89,45 +91,17 @@ option {
 .axis line {
 	fill: none;
 	stroke: black;
-	stroke-width: 2px;
+	stroke-width: 1px;
 	shape-rendering: crispEdges;
 }
 
 .axis text {
 	font-family: sans-serif;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	fill: black;
     font-weight: bold;
 }
 
-#mapid {
-    background-color: #000000;    
-    width: 650px;
-    height: 650px;
-    min-height: 100%;
-    min-width: 100%;
-    display: block;
-	align-content: center;
-  
-}
- 
-#header {
-    background-color: #000000;    
-    width:500px;
-    height: 63px;
-	font-family: Georgia, serif;
-	font-size: 9;
-	color: #f9fbd0;    
-    display: block;
-	
-body {
-  background-color: #000000;
-  align-content: center;
 
-}
-	
-
-	
-	
 	
 	

@@ -21,7 +21,7 @@ var chartWidth = window.innerWidth * .36,
 	
 var yScale = d3.scaleLinear()
     .range([chartHeight - 11, 0])
-    .domain([0, 100]);
+    .domain([0, 80]);
 
 //begin script when window loads
 window.onload = setMap();
@@ -252,7 +252,7 @@ function setChart(csvData, colorScale){
 	//Code for labeling the bars directly would go here. Label Y axis instead.	
 	
 	var chartTitle = chart.append("text")
-        .attr("x", 60)
+        .attr("x", 58)
         .attr("y", 20)
         .attr("class", "chartTitle")
         .text("Percent of eligible voters who voted in the selected year.");
@@ -314,13 +314,10 @@ function changeAttribute(attribute, csvData){
 	//Change the Y scale dynamically - compare or match with line 232
 	yScale = d3.scaleLinear()
         .range([chartHeight - 10, 0])
-        .domain([0, 100]);
+        .domain([0, 80]);
 	
 	
-	
-	
-	//new
-	//updata vertical axis 
+	//update vertical axis 
     d3.select(".axis").remove();
     var yAxis = d3.axisLeft()
         .scale(yScale);
