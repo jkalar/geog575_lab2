@@ -10,17 +10,17 @@ var attrArray = ["2018", "2016", "2014", "2012", "2010", "2008", "2006", "2004",
 var expressed = attrArray[0]; //start
 	
 //chart frame dimensions  - Formerly under: FUNCTION - CREATE COORDINATED BAR CHART
-var chartWidth = window.innerWidth * .33,
+var chartWidth = window.innerWidth * .36,
     chartHeight = 472,
     leftPadding = 40,
-    rightPadding = 2,
+    rightPadding = 25,
     topBottomPadding =5,
     chartInnerWidth = chartWidth - leftPadding - rightPadding,
     chartInnerHeight = chartHeight - topBottomPadding * 2,
     translate = "translate(" + leftPadding + "," + topBottomPadding + ")";
 	
 var yScale = d3.scaleLinear()
-    .range([chartHeight - 20, 0])
+    .range([chartHeight - 11, 0])
     .domain([0, 100]);
 
 //begin script when window loads
@@ -32,7 +32,7 @@ window.onload = setMap();
 function setMap(){
 	
 	//dimensions
-	var width = window.innerWidth * 0.5;
+	var width = window.innerWidth * 0.52;
 		height = 650;
 
 	//create new svg container for the map
@@ -71,7 +71,6 @@ function setMap(){
 		//translate us_states TopoJSON		
 		states_background = topojson.feature(us_states, us_states.objects.collection).features;
 		
-		// join wildfires_csv.csv to us-states_topo.topojson
 		// Redefine states_background variable
 		states_background = joinData(states_background, csvData);
 		
@@ -256,7 +255,7 @@ function setChart(csvData, colorScale){
         .attr("x", 60)
         .attr("y", 20)
         .attr("class", "chartTitle")
-        .text("Percent of eligible voters who voted this election cycle.");
+        .text("Percent of eligible voters who voted in the selected year.");
 
     //create vertical axis generator
     var yAxis = d3.axisLeft()
@@ -292,7 +291,7 @@ function createDropdown(csvData){
     var titleOption = dropdown.append("option")
         .attr("class", "titleOption")
         .attr("disabled", "true")
-        .text("Select Data Year");
+        .text("Select Year");
 
     //add attribute name options
     var attrOptions = dropdown.selectAll("attrOptions")
@@ -380,7 +379,7 @@ function updateChart(bars, n, colorScale){
     
     //add text to chart title
     var chartTitle = d3.select(".chartTitle")
-        .text("Percent of eligible voters who voted this election cycle.");
+        .text("Percent of eligible voters who voted in the selected year.");
 };
 
 //function to highlight enumeration units and bars
