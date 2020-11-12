@@ -10,8 +10,8 @@ var attrArray = ["2018", "2016", "2014", "2012", "2010", "2008", "2006", "2004",
 var expressed = attrArray[0]; //start
 	
 //chart frame dimensions  - Formerly under: FUNCTION - CREATE COORDINATED BAR CHART
-var chartWidth = window.innerWidth * .85,
-    chartHeight = 500,
+var chartWidth = window.innerWidth * .33,
+    chartHeight = 472,
     leftPadding = 40,
     rightPadding = 2,
     topBottomPadding =5,
@@ -32,8 +32,8 @@ window.onload = setMap();
 function setMap(){
 	
 	//dimensions
-	var width = window.innerWidth * 0.90;
-		height = 450;
+	var width = window.innerWidth * 0.5;
+		height = 650;
 
 	//create new svg container for the map
 	var map = d3.select("body")
@@ -89,7 +89,7 @@ function setMap(){
 		
 	
 	};
-};   //end of setMap()
+};   //end setMap()
 	
 	
 
@@ -165,7 +165,7 @@ function makeColorScale(data){
 	
 	
 	
-//FUNCTION CHOROPLETH - test for missing data values
+// Choropleth function which will test for missing data values
 
 function choropleth(props, colorScale){
 	
