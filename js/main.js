@@ -10,11 +10,11 @@ var attrArray = ["2018", "2016", "2014", "2012", "2010", "2008", "2006", "2004",
 var expressed = attrArray[0]; //start
 	
 //chart frame dimensions  - Formerly under: FUNCTION - CREATE COORDINATED BAR CHART
-var chartWidth = window.innerWidth * .36,
+var chartWidth = window.innerWidth * .38,
     chartHeight = 472,
-    leftPadding = 40,
+    leftPadding = 25,
     rightPadding = 25,
-    topBottomPadding =5,
+    topBottomPadding = 5,
     chartInnerWidth = chartWidth - leftPadding - rightPadding,
     chartInnerHeight = chartHeight - topBottomPadding * 2,
     translate = "translate(" + leftPadding + "," + topBottomPadding + ")";
@@ -32,8 +32,8 @@ window.onload = setMap();
 function setMap(){
 	
 	//dimensions
-	var width = window.innerWidth * 0.52;
-		height = 650;
+	var width = window.innerWidth * 0.48;
+		height = 600;
 
 	//create new svg container for the map
 	var map = d3.select("body")
@@ -253,7 +253,7 @@ function setChart(csvData, colorScale){
 	
 	var chartTitle = chart.append("text")
         .attr("x", 58)
-        .attr("y", 20)
+        .attr("y", 40)
         .attr("class", "chartTitle")
         .text("Percent of eligible voters who voted in the selected year.");
 
