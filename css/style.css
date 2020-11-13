@@ -10,7 +10,7 @@
     border: solid black;
     border-width: 3px;
     margin-left: 35px;
-    background-color: lightgrey;
+    background-color: royalblue;
 }
 .chart {
 	float: auto;
@@ -26,7 +26,7 @@
 }
 
 .chartBackground {
-	fill: lightgrey;
+	fill: royalblue;
 }
 
 .chartFrame {
