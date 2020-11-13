@@ -11,12 +11,12 @@ body {
 .map {
     border: solid black;
     border-width: 3px;
-    margin-left: 35px;
+    margin-left: 0px;
     background-color: royalblue;
 }
 .chart {
 	float: auto;
-	margin:100px 75px 0px 50px;
+	margin: 0px 0px 0px 0px;
     border: solid black;
     border-width: 3px;
 }
@@ -33,7 +33,7 @@ body {
 
 .chartFrame {
 	fill: none;
-	stroke: #000;
+	stroke: none;
 	stroke-width: 1.8px;
 	shape-rendering: crispEdges;
 }
@@ -91,7 +91,7 @@ option {
 .axis line {
 	fill: none;
 	stroke: black;
-	stroke-width: 1px;
+	stroke-width: 2px;
 	shape-rendering: crispEdges;
 }
 
