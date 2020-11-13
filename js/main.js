@@ -247,7 +247,7 @@ function setChart(csvData, colorScale){
         .on("mousemove", moveLabel);
 
 	var desc = bars.append("desc")
-    .text('{"stroke": "none", "stroke-width": "0px"}');
+        .text('{"stroke": "none", "stroke-width": "0px"}');
 	
 	//Code for labeling the bars directly would go here. Label Y axis instead.	
 	
@@ -383,8 +383,8 @@ function updateChart(bars, n, colorScale){
 function highlight(props){
     //change stroke
     var selected = d3.selectAll("." + props.name)
-        .style("stroke", "blue")
-        .style("stroke-width", "2");
+        .style("stroke", "yellow")
+        .style("stroke-width", "1");
     
     setLabel(props);
 };
