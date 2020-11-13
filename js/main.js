@@ -335,7 +335,7 @@ function changeAttribute(attribute, csvData){
     //recreate the color scale
     var colorScale = makeColorScale(csvData);
 
-    //recolor enumeration units
+    //recolor states
     var regions = d3.selectAll(".regions")
         .transition()
         .duration(1000)
