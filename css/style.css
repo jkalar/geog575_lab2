@@ -9,16 +9,14 @@ body {
 }
 
 .map {
-    border: solid black;
-    border-width: 3px;
     margin-left: 0px;
     background-color: royalblue;
 }
 .chart {
 	float: auto;
-	margin: 100px 0px px 10px;
-    border: solid black;
-    border-width: 3px;
+	margin: 0px 0px 50px 100px;
+    outline: solid black 4px;
+    outline-offset: 5px;
 }
 
 .chartTitle {
