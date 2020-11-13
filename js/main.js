@@ -12,8 +12,8 @@ var expressed = attrArray[0]; //start
 //chart frame dimensions  - Formerly under: FUNCTION - CREATE COORDINATED BAR CHART
 var chartWidth = window.innerWidth * .38,
     chartHeight = 472,
-    leftPadding = 25,
-    rightPadding = 25,
+    leftPadding = 30,
+    rightPadding = 5,
     topBottomPadding = 5,
     chartInnerWidth = chartWidth - leftPadding - rightPadding,
     chartInnerHeight = chartHeight - topBottomPadding * 2,
