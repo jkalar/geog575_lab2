@@ -193,6 +193,7 @@ function setEnumerationUnits(states_background, map, path, colorScale){
 			return "regions " + d.properties.name;
 		})
 		.attr("d", path)
+        .attr("cursor", "pointer")
 		.style("fill", function(d){
             return choropleth(d.properties, colorScale);
         })
@@ -242,6 +243,7 @@ function setChart(csvData, colorScale){
             return "bar " + d.name;
         })
         .attr("width", chartInnerWidth / csvData.length - 1)
+        .attr("cursor", "pointer")
         .on("mouseover", highlight)
         .on("mouseout", dehighlight)
         .on("mousemove", moveLabel);
@@ -456,7 +458,38 @@ function moveLabel(){
         .style("left", x + "px")
         .style("top", y + "px");
 };
+    
+  /*  var zoomSettings = {
+        duration: 1000,
+        ease: d3.easeCubicOut,
+        zoomLevel: 5
+    };
+    
+    function clicked(d) {
+        var x;
+        var y;
+        var zoomLevel;
+        
+        if (d && centered !== d) {
+            var centroid = path.centroid(d);
+            x = centroid[0];
+            y = centroid[1];
+            zoomlevel = zoomSettings.zoomLevel;
+            centered = d;
+        } else {
+            x = width / 2;
+            y =  height / 2;
+            zoomLevel = 1;
+            centered = null;
+        }
+    
+        g.transition()
+            .duration(zoomSettings.duration)
+            .ease(zoomSettings.ease)
+    }*/
 
+    
+    
 })(); //last line of main.js
 	
 	
