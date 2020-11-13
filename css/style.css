@@ -16,7 +16,7 @@ body {
 }
 .chart {
 	float: auto;
-	margin: 0px 0px 0px 0px;
+	margin: 100px 0px px 10px;
     border: solid black;
     border-width: 3px;
 }

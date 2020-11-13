@@ -10,17 +10,17 @@ var attrArray = ["2018", "2016", "2014", "2012", "2010", "2008", "2006", "2004",
 var expressed = attrArray[0]; //start
 	
 //chart frame dimensions  - Formerly under: FUNCTION - CREATE COORDINATED BAR CHART
-var chartWidth = window.innerWidth * .38,
-    chartHeight = 472,
+var chartWidth = window.innerWidth * .40,
+    chartHeight = 480,
     leftPadding = 30,
-    rightPadding = 5,
-    topBottomPadding = 5,
+    rightPadding = 9,
+    topBottomPadding = 3,
     chartInnerWidth = chartWidth - leftPadding - rightPadding,
     chartInnerHeight = chartHeight - topBottomPadding * 2,
     translate = "translate(" + leftPadding + "," + topBottomPadding + ")";
 	
 var yScale = d3.scaleLinear()
-    .range([chartHeight, 0])
+    .range([chartHeight -18, 0])
     .domain([0, 80]);
 
 //begin script when window loads
