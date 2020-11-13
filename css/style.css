@@ -1,11 +1,15 @@
 /*Stylesheet for Lab 2 Geog 575 by Jeff Kalar, Nov 2020*/
 
 
+#story{
+    text-align: center;
+}
+
 .map {
     border: solid black;
     border-width: 3px;
     margin-left: 35px;
-    background-color: cornflowerblue;
+    background-color: lightgrey;
 }
 .chart {
 	float: auto;
@@ -79,7 +83,6 @@ option {
 	stroke: #fff;
 	stroke-width: .85px;
 	stroke-linecap: round;
-	
 }
 
 .axis path,
