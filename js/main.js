@@ -351,7 +351,7 @@ function changeAttribute(attribute, csvData){
         .delay(function(d, i){
             return i * 20
         })
-        .duration(500);
+        .duration(400);
 
     updateChart(bars, csvData.length, colorScale);
 };
