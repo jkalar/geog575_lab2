@@ -9,7 +9,7 @@ body {
 }
 
 .map {
-    margin-left: 0px;
+    margin-left: 25px;
     background-color: royalblue;
 }
 .chart {
@@ -84,6 +84,7 @@ option {
 	stroke: #fff;
 	stroke-width: .85px;
 	stroke-linecap: round;
+    
 }
 
 .axis path,
@@ -101,6 +102,7 @@ option {
     font-weight: bold;
 }
 
-
+.regions:hover{opacity: 0.78;}
+.bar:hover{opacity: 0.75;}
 	
 	
