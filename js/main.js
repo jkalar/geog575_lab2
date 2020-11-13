@@ -20,7 +20,7 @@ var chartWidth = window.innerWidth * .38,
     translate = "translate(" + leftPadding + "," + topBottomPadding + ")";
 	
 var yScale = d3.scaleLinear()
-    .range([chartHeight, 0])
+    .range([chartHeight - 10, 0])
     .domain([0, 80]);
 
 //begin script when window loads
