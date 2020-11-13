@@ -364,7 +364,7 @@ function updateChart(bars, n, colorScale){
         })
         //size/resize bars
         .attr("height", function(d, i){
-            return 463 - yScale(parseFloat(d[expressed]));
+            return 464 - yScale(parseFloat(d[expressed]));
         })
         .attr("y", function(d, i){
             return yScale(parseFloat(d[expressed])) + topBottomPadding;
