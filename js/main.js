@@ -309,22 +309,26 @@ function createDropdown(csvData){
 function changeAttribute(attribute, csvData){
 	expressed = attribute;
 	
-	//Change the Y scale dynamically
+	//Change the Y scale
+    
 	csvmax = d3.max(csvData, function(d) { return
 	parseFloat(d[expressed]); });
 	
 	//Change the Y scale dynamically - compare or match with line 232
+    
 	yScale = d3.scaleLinear()
         .range([chartHeight - 10, 0])
         .domain([0, 80]);
 	
 	
 	//update vertical axis 
+    
     d3.select(".axis").remove();
     var yAxis = d3.axisLeft()
         .scale(yScale);
 
     //place axis
+    
     var axis = d3.select(".chart")
         .append("g")
         .attr("class", "axis")
@@ -336,6 +340,7 @@ function changeAttribute(attribute, csvData){
     var colorScale = makeColorScale(csvData);
 
     //recolor states
+    
     var regions = d3.selectAll(".regions")
         .transition()
         .duration(1000)
@@ -343,7 +348,7 @@ function changeAttribute(attribute, csvData){
             return choropleth(d.properties, colorScale)
         });
 
-    //re-sort, resize, and recolor bars
+    //update bars
     var bars = d3.selectAll(".bar")
         //re-sort bars
         .sort(function(a, b){

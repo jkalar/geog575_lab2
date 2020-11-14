@@ -67,9 +67,10 @@ option {
 	height: 50px;
 	min-width: 100px;
 	color: red;
-	background-color: #000;
+	background-color: white;
 	border: solid thin #fff;
-	padding: 5px 10px;
+	padding: 15px 15px;
+    border-radius: 750px;
 	top: -75px;
 }
 
@@ -83,7 +84,7 @@ option {
 .regions {
     fill:#296FB3;
 	stroke: white;
-	stroke-width: .85px;
+	stroke-width: 3px;
 	stroke-linecap: round;   
 }
 
@@ -102,7 +103,7 @@ option {
     font-weight: bold;
 }
 
-.regions:hover{opacity: 0.78;}
+.regions:hover{opacity: 0.50;}
 .bar:hover{opacity: 0.75;}
 	
 	
