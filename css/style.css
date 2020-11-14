@@ -82,17 +82,16 @@ option {
 
 .regions {
     fill:#296FB3;
-	stroke: #fff;
+	stroke: white;
 	stroke-width: .85px;
-	stroke-linecap: round;
-    
+	stroke-linecap: round;   
 }
 
 .axis path,
 .axis line {
 	fill: none;
 	stroke: white;
-	stroke-width: 2px;
+	stroke-width: 1px;
 	shape-rendering: crispEdges;
 }
 

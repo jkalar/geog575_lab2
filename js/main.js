@@ -385,8 +385,8 @@ function updateChart(bars, n, colorScale){
 function highlight(props){
     //change stroke
     var selected = d3.selectAll("." + props.name)
-        .style("stroke", "yellow")
-        .style("stroke-width", "1");
+        .style("stroke", "skyblue")
+        .style("stroke-width", "5");
     
     setLabel(props);
 };
