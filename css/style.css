@@ -1,5 +1,6 @@
 /*Stylesheet for Lab 2 Geog 575 by Jeff Kalar, Nov 2020*/
 
+
 body {
     background-color: royalblue;
 }
@@ -65,7 +66,7 @@ option {
 	position: absolute;
 	height: 50px;
 	min-width: 100px;
-	color: #000;
+	color: white;
 	background-color: #000;
 	border: solid thin #fff;
 	padding: 5px 10px;

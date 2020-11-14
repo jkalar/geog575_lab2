@@ -1,4 +1,4 @@
-//Erin J. LeFevre, 2020
+//Jeff Kalar GEOG 575 Fall 2020 - Lab 2 Coordinated Viz javascript (D3) file
 
 //Anonymous function - local scope
 (function(){
@@ -240,7 +240,7 @@ function setChart(csvData, colorScale){
             return b[expressed]-a[expressed]
         })
         .attr("class", function(d){
-            return "bar " + d.name;
+            return "bar " + d.props;
         })
         .attr("width", chartInnerWidth / csvData.length - 1)
         .attr("cursor", "pointer")
@@ -416,7 +416,7 @@ function dehighlight(props){
     };
 };
 
-/*//function to create dynamic label
+//function to create dynamic label
 function setLabel(props){
     //label content
     var labelAttribute = "<h1>" + props[expressed] +
@@ -432,7 +432,7 @@ function setLabel(props){
     var regionName = infolabel.append("div")
         .attr("class", "labelname")
         .html(props.name);
-};*/
+};
 
 //function to move info label with mouse
 //Example 2.8 line 1...function to move info label with mouse
